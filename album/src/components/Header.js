@@ -1,6 +1,7 @@
 // Import libraries for making a component
 import React from 'react'
 import { View, Text } from 'react-native'
+import { Spinner } from './'
 
 // Make a component
 const Header = () => {
@@ -8,7 +9,8 @@ const Header = () => {
 
   return (
     <View style={viewStyle}>
-      <Text style={textStyle}>Albums!</Text>
+      <Text style={textStyle}>Albums</Text>
+      <Spinner size={'small'} />
     </View>
   )
 }
