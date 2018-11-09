@@ -13,7 +13,7 @@ module.exports = {
     'prettier',
     'rallycoding',
     'eslint:recommended',
-    'plugin:react/recommended',
+    //'plugin:react/recommended',
   ],
   plugins: [
     'prettier',
@@ -27,8 +27,8 @@ module.exports = {
     }],
     'no-var': 'error',
     'prefer-const': ['error', {
-        destructuring: 'any',
-        ignoreReadBeforeAssign: false
+      destructuring: 'any',
+      ignoreReadBeforeAssign: false
     }],
     eqeqeq: 'error',
   },
