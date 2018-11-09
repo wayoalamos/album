@@ -1,15 +1,9 @@
 import React from 'react'
-import { View, Component } from 'react-native'
-import { Header, AlbumList } from './components'
+import { Component, View } from 'react-native'
 
 class App extends Component {
   render() {
-    return (
-      <View style={{ flex: 1 }}>
-        <Header />
-        <AlbumList />
-      </View>
-    )
+    return <View style={{ flex: 1 }} />
   }
 }
 
