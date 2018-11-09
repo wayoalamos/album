@@ -21,4 +21,4 @@ const styles = {
     marginTop: 10,
   },
 }
-export default Card
+export { Card }
