@@ -2,4 +2,4 @@
 
 react-native simple app
 
-1. Almbums
+1. Albums
