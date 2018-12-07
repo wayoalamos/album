@@ -6,7 +6,8 @@ import reducers from './reducers'
 
 class App extends Component {
   render() {
-    console.log('logeandoperro!')
+    console.log('Aaaaaaaaaaaa')
+    console.warn('logeando')
     return (
       <Provider store={createStore(reducers)}>
         <View>
