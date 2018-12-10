@@ -6,10 +6,6 @@ import { employeeUpdate, employeeFormAdd } from '../actions/EmployeeActions'
 import { Card, CardSection, Input, Button } from './common'
 
 class EmployeeCreate extends Component {
-  onNameChange(text) {
-    this.props.employeeUpdate(text)
-  }
-
   onButtonPress() {
     const { name, phone, shift } = this.props
     this.props.employeeFormAdd({ name, phone, shift: shift || 'Lunes' })

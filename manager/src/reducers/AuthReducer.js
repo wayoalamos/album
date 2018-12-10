@@ -8,7 +8,7 @@ import {
 
 const INITIAL_STATE = {
   email: 'salame@salame.com',
-  password: '',
+  password: 'salame',
   loading: false,
   user: null,
   error: '',
