@@ -13,7 +13,7 @@
     "i": "^0.3.6",
     "prettier": "^1.15.2",
     "react": "16.6.1",
-    "react-native": "0.57.5",
+    "react-native": "0.54.4",
     "react-native-router-flux": "^4.0.6",
     "react-navigation": "^3.0.6",
     "react-redux": "^5.1.1",
