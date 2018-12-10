@@ -1,8 +1,15 @@
-import { EMPLOYEE_UPDATE } from './types'
+import { EMPLOYEE_UPDATE, EMPLOYEE_CREATE } from './types'
 
-export const employeeUpdate = text => {
+export const employeeUpdate = prop => {
   return {
     type: EMPLOYEE_UPDATE,
-    payload: text,
+    payload: prop,
+  }
+}
+
+export const employeeFormAdd = prop => {
+  return {
+    type: EMPLOYEE_CREATE,
+    payload: prop,
   }
 }

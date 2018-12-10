@@ -7,6 +7,8 @@ const Input = ({
   onChangeText,
   placeholder,
   secureTextEntry,
+  keyboardType,
+  maxLength,
 }) => {
   const { inputStyle, labelStyle, containerStyle } = styles
 
@@ -19,7 +21,9 @@ const Input = ({
         autoCorrect={false}
         style={inputStyle}
         value={value}
+        keyboardType={keyboardType}
         onChangeText={onChangeText}
+        maxLength={maxLength}
       />
     </View>
   )
