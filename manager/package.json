@@ -10,9 +10,12 @@
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-prettier": "^3.0.0",
     "firebase": "^5.4.0-0",
+    "i": "^0.3.6",
     "prettier": "^1.15.2",
     "react": "16.6.1",
     "react-native": "0.57.5",
+    "react-native-router-flux": "^4.0.6",
+    "react-navigation": "^3.0.6",
     "react-redux": "^5.1.1",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"

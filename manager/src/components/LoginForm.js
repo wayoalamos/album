@@ -21,7 +21,7 @@ class LoginForm extends Component {
 
   renderButton() {
     if (this.props.loading) {
-      return <Spinner />
+      return <Spinner size="large" />
     }
     return <Button onPress={this.onButtonPress.bind(this)}>Ingresar</Button>
   }
@@ -62,8 +62,8 @@ const styles = {
 }
 
 const mapStateToProps = ({ auth }) => {
-  const { email, password, error } = auth
-  return { email, password, error }
+  const { email, password, error, loading } = auth
+  return { email, password, error, loading }
 }
 
 export default connect(

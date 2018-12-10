@@ -7,10 +7,10 @@ import {
 } from '../actions/types'
 
 const INITIAL_STATE = {
-  email: '',
+  email: 'salame@salame.com',
   password: '',
   loading: false,
-  user: '',
+  user: null,
   error: '',
 }
 
@@ -23,7 +23,7 @@ export default (state = INITIAL_STATE, action) => {
     case LOGIN_USER:
       return { ...state, loading: true }
     case LOGIN_USER_SUCCESS:
-      return { ...INITIAL_STATE }
+      return { ...INITIAL_STATE, user: action.payload }
     case LOGIN_USER_FAIL:
       return { ...INITIAL_STATE, error: 'Error de autenticacion' }
     default:
