@@ -3,7 +3,11 @@ import '@firebase/auth'
 import '@firebase/database'
 import { Actions } from 'react-native-router-flux'
 
-import { EMPLOYEE_UPDATE, EMPLOYEE_CREATE } from './types'
+import {
+  EMPLOYEE_UPDATE,
+  EMPLOYEE_CREATE,
+  EMPLOYEES_FETCH_SUCCESS,
+} from './types'
 
 export const employeeUpdate = prop => {
   return {
@@ -23,5 +27,14 @@ export const employeeFormAdd = ({ name, phone, shift }) => {
         dispatch({ type: EMPLOYEE_CREATE })
         Actions.employeeList()
       })
+  }
+}
+
+export const fetchEmployee = employeeList => {
+  return dispatch => {
+    dispatch({
+      type: EMPLOYEES_FETCH_SUCCESS,
+      payload: employeeList,
+    })
   }
 }
