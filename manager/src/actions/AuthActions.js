@@ -37,7 +37,7 @@ export const loginUser = ({ email, password }) => {
           .createUserWithEmailAndPassword(email, password)
           .then(user2 => loginUserSuccess(dispatch, user2))
           .catch(ee => {
-            console.warn(ee)
+            console.warn('Error', ee)
             loginUserFail(dispatch)
           })
       )

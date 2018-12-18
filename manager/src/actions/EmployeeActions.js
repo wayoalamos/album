@@ -25,16 +25,22 @@ export const employeeFormAdd = ({ name, phone, shift }) => {
       .push({ name, phone, shift })
       .then(() => {
         dispatch({ type: EMPLOYEE_CREATE })
-        Actions.employeeList()
+        Actions.employeeList({ type: 'reset' })
       })
   }
 }
 
-export const fetchEmployee = employeeList => {
+export const fetchEmployees = () => {
   return dispatch => {
-    dispatch({
-      type: EMPLOYEES_FETCH_SUCCESS,
-      payload: employeeList,
-    })
+    const { currentUser } = firebase.auth()
+    firebase
+      .database()
+      .ref(`/users/${currentUser.uid}/employees`)
+      .on('value', snapshot => {
+        dispatch({
+          type: EMPLOYEES_FETCH_SUCCESS,
+          payload: snapshot.val(),
+        })
+      })
   }
 }
